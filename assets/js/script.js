@@ -33,7 +33,11 @@ let userScore = 0;
 let computerScore = 0;
 let tieGames = 0;
 
-
+/**
+ * Disabling the buttons when the user has clicked on them,
+ * as the user waits for the computer to make it's choice,
+ * and enabling them again when the results are shown
+ */
 function toggleButtons(isEnabled) {
     for (let button of buttons) {
         if (isEnabled) {
@@ -44,6 +48,9 @@ function toggleButtons(isEnabled) {
     }
 }
 
+/**
+ * The game function for when the user has made it's choice
+ */
 function makeUserSelection(userChoice) {
     if (gameInProgress == true) {
         return;
@@ -64,6 +71,11 @@ function makeUserSelection(userChoice) {
     }, 1500);    
 }
 
+/**
+ * Runs the game after the user and computer has made it's choice
+ * Updates the score on the scoreboard and 
+ * the descriptive text
+ */
 function runGame(userChoice) {
     const computerChoice = computerTurn();    
     const winner = checkWinner(userChoice, computerChoice);
@@ -78,6 +90,10 @@ function runGame(userChoice) {
     lossesLabel.textContent = computerScore;
 }
 
+/**
+ * Function for generating random numbers
+ * and returning names based on these
+ */
 function computerTurn() {
 
     let randNum = Math.floor(Math.random() * 5) + 1;
@@ -96,6 +112,9 @@ function computerTurn() {
     }
 }
 
+/**
+ * Checks the winner of the game
+ */
 function checkWinner(userChoice, computerChoice) {
     if(userChoice == computerChoice){
       return 0;
@@ -122,6 +141,9 @@ function checkWinner(userChoice, computerChoice) {
     }
 }
 
+/**
+ * Increments the scores and records the results
+ */
 function recordResult(result) {
     if (result == 1) {
         userScore++;
