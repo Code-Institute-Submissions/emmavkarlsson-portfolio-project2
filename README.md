@@ -1,108 +1,106 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+**Portfolio Project 2**
 
-Welcome Emma Karlsson,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+_Rock Paper Scissors Lizard Spock Game_
 
 ------
+The Rock Paper Scissors Lizard Spock game is a simple game made for anyone - no previous experience needed and can be enjoyed by users of all ages. The user of the page is, by a simple button click, able to play the game against a computer, and then able to see the scores presented.
 
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+<img src="docs/amiresponsive.png">
 
 ------
+**User Stories**
 
-## FAQ about the uptime script
+- As a user of the website, I would like to play the Rock Paper Scissors Lizard Spock Game. Therefore, I click on one of the symbols/buttons, which determines my choice and after 1.5 seconds, displays the computers choice, and then displays the winner.
+- As a user of the website, I would like to see the scores. I can find these presented under the game area.<br>
 
-**Why have you added this script?**
+------
+**Features**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+_Game Board Area_
+- In the game board area, you can find the 5 different symbols needed to play the game. These are made in different colors so that you can easily differentiate between them. 
+- In the game board area, before clicking, you can find "Player", "Computer" and "Winner" with empty results.
+<br><img src="docs/gameboard_before.png" width="75%"><br>
+- When clicking a button, the game loads waiting for the computer to make it's choice. All buttons are disabled and therefore gray. The game board area also displays a text that says "Please wait for computer to select"
+<br><img src="docs/gameboard_during.png" width="75%"><br>
+- After clicking a button, you can find the outcomes: the players choice, the computers choice and the result of the game; either ”You lost!”, ”You won!” or ”It’s a tie”.<br>
+<br><img src="docs/gameboard_after.png" width="75%"><br>
 
-**How will this affect me?**
+_Score Board Area_
+- In the score board area you find three different kinds of scores: Wins, Ties or Losses. The wins are presented in a green color, ties in black and losses in red.
+<br><img src="docs/scoreboard.png" width="75%"><br>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+------
+**Future Features**
+- Future features could be adding a history to the scoreboard, displaying the previous moves of the user and the computer.
+- Future features could include making the game a multiplayer game, where the player could choose if they want to play against the computer, or a player 2. 
+- Future features could also be introducing an option where you could choose how many options you want to play with. Either 3 - Rock Paper Scissors, 5 - Rock Paper Scissors Lizard Spock, and maybe even 7, 9, 11 different options. <br><br>
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+------
+**Wireframes, typography and color scheme**
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+I chose a very simple layout for the game - but still wanted to make it a little bit playful and therefore choose different colors for my buttons. Wins are presented in green, and losses in red.
+Font chosen is roboto.<br><br>
 
-**So….?**
+------
+**Technology**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- HTML - I have used HTML to write the code
+- CSS - I have used CSS to style and design the page
+- Javascript - I have used Javascript to make the page interactive.
+- Google Fonts - I have used Google Fonts to access the font Roboto.
+- Font Awesome - I have used Font Awesome for the icons displayed in my buttons.
+- GitHub - I have hosted the platform through GitHub 
+- GitPod - I have used GitPod to write the code.
 
-**Can I opt out?**
+------
+**Testing**
+_Code Validation_
+- I have tested the HTML through W3C Validator, and the website passed without warnings or errors. <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Femmavkarlsson.github.io%2Fportfolio-project2%2F">Results</a>
+- I have tested the CSS through the Jigsaw validator, and it passed without warnings or errors. <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Femmavkarlsson.github.io%2Fportfolio-project2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv">Results</a>
+- I have checked the Javascript code in JS Hint, which let me know I had some unused variables, so I removed these. 
+- The website scored high in all areas when tested through the Lighthouse function in devtools.
+<br><img src="docs/lighthouse.png" width="50%"><br>
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+_Test cases_
+1. User clicks on a button, buttons turn gray while waiting for computers choice. A text appear that says "Please wait for the computer to select. The players choice is displayed beneath the text. First time playing, the scores are all set to zero.
+<br><img src="docs/testcase_1.png" width="75%"><br>
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+2. User tries clicking on a button while they are disabled, nothing happenes. 
+3. After the game is loaded, the results are presented. 
+<br><img src="docs/testcase_2.png" width="75%">
 
-**Anything more?**
+4. User clicks on a button again, computers choice as well as the results are cleared and step (1-3) is repeated. 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
+_Bugs_
+- Initially, I used event.target.name to access the name of the button that was clicked. However, this only updated the users-choice text content when the button border was clicked, not the icon in it - giving me different outcomes based on where I clicked. I then changed this so that the button had event listeners that targeted a function, where another function was called (makeUserSelection). After formatting these functions, I was able to get the Players result displayed no matter where on the button I clicked.
 
-Happy coding!
+
+_Supported screens and browsers_
+- I confirmed the website and the game works in different browsers (Chrome, Safari, Firefox)
+- I confirmed the website is responsive and works both on desktops, tablets, and mobile devices.
+
+
+------
+**Deployment**
+- The site was deployed to GitHub pages through the following steps:
+    1. Open the repository and go to Settings
+    2. In the menu to the left, press Pages
+    3. Under Branch, select Main
+    4. The link to the website is then provided at the top of the page
+* The site was deployed to GitPod through the following steps:
+    1. Open the repository and press the green ”GitPod” button
+    2. In the terminal, write ”python3 -m http.server” and press enter
+    3. A pop up will appear at the bottom right, press ”Open Browser”
+    4. The page will open in a new tab.
+
+
+**Credits**
+- A lot of the HTML and CSS, such as structure of page and button styles, are inspired by the Love Math project.
+- Icons are collected from Font Awesome.
+- Fonts are from Google Fonts
+- I have watched <a href="https://youtu.be/n1_vHArDBRA">this</a> video on Youtube which helped me with generating a random choice for the computer.
+- I have watched <a href="https://youtu.be/_f2qLZ5dhWU">this</a> video on Youtube which led me to be able to disable my buttons while the computer was making it's choice.
+- <a href="https://youtu.be/nGfTjA8qNDA">This</a> video helped me further understand setTimeOut and helped me build the code for my own timeout function.
+- I have had a great deal of help from my mentor Rohit Sharma
+
