@@ -29,7 +29,14 @@ let computerScore = 0;
 let tieGames = 0;
 
 
-function toggleButtons() {
+function toggleButtons(isEnabled) {
+    for (let button of buttons) {
+        if (isEnabled) {
+            button.classList.remove("disabled");
+        } else {
+            button.classList.add("disabled");
+        }
+    }
 }
 
 function makeUserSelection() {  
