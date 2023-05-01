@@ -64,7 +64,18 @@ function makeUserSelection(userChoice) {
     }, 1500);    
 }
 
-function runGame() {
+function runGame(userChoice) {
+    const computerChoice = computerTurn();    
+    const winner = checkWinner(userChoice, computerChoice);
+    const outcome = recordResult(winner);
+
+    messageSpan.textContent = "";
+    computer.textContent = computerChoice;
+    result.textContent = outcome;
+
+    winsLabel.textContent = userScore;
+    tiesLabel.textContent = tieGames;
+    lossesLabel.textContent = computerScore;
 }
 
 function computerTurn() {
