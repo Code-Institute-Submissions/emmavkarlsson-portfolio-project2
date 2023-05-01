@@ -22,6 +22,13 @@ let scissors = document.getElementById('scissors');
 let lizard = document.getElementById('lizard');
 let spock = document.getElementById('spock');
 
+// Game variables
+let gameInProgress = false;
+let userScore = 0;
+let computerScore = 0;
+let tieGames = 0;
+
+
 function toggleButtons() {
 }
 
@@ -75,5 +82,15 @@ function checkWinner(userChoice, computerChoice) {
     }
 }
 
-function recordResult() {
+function recordResult(result) {
+    if (result == 1) {
+        userScore++;
+        return "You Win!";
+    } else if (result == 0) {
+        tieGames++;
+        return "It's a tie!";
+    } else if (result == -1) {
+        computerScore++;
+        return "You Lose!";
+    }
 }
