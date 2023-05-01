@@ -22,6 +22,11 @@ let scissors = document.getElementById('scissors');
 let lizard = document.getElementById('lizard');
 let spock = document.getElementById('spock');
 
+let messageSpan = document.getElementById('message');
+let winsLabel = document.getElementById('wins');
+let tiesLabel = document.getElementById('ties');
+let lossesLabel = document.getElementById('losses');
+
 // Game variables
 let gameInProgress = false;
 let userScore = 0;
@@ -39,7 +44,24 @@ function toggleButtons(isEnabled) {
     }
 }
 
-function makeUserSelection() {  
+function makeUserSelection(userChoice) {
+    if (gameInProgress == true) {
+        return;
+    }
+
+    gameInProgress = true;
+    toggleButtons(false);
+
+    messageSpan.textContent = "Please wait for computer to select";
+    user.textContent = userChoice;
+    computer.textContent = "";
+    result.textContent = "";
+
+    setTimeout(function() {
+        runGame(userChoice);
+        gameInProgress = false;
+        toggleButtons(true);
+    }, 1500);    
 }
 
 function runGame() {
