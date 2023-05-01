@@ -12,6 +12,16 @@ function initializeGame(event) {
     }
 }
 
+let user = document.getElementById('users-choice');
+let computer = document.getElementById('computers-choice');
+let result = document.getElementById('result');
+
+let rock = document.getElementById('rock');
+let paper = document.getElementById('paper');
+let scissors = document.getElementById('scissors');
+let lizard = document.getElementById('lizard');
+let spock = document.getElementById('spock');
+
 function toggleButtons() {
 }
 
