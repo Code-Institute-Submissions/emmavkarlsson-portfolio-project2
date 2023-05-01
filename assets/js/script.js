@@ -39,7 +39,30 @@ function computerTurn() {
     }
 }
 
-function checkWinner() {
+function checkWinner(userChoice, computerChoice) {
+    if(userChoice == computerChoice){
+      return 0;
+    } 
+    
+    if (computerChoice == "Rock") {
+        return (userChoice == "Paper" || userChoice == "Spock") ? 1 : -1;
+    } 
+    
+    if (computerChoice == "Paper") {
+        return (userChoice == "Scissors" || userChoice == "Lizard") ? 1 : -1;
+    } 
+    
+    if (computerChoice == "Scissors") {
+        return (userChoice == "Rock" || userChoice == "Spock") ? 1 : -1;
+    } 
+    
+    if (computerChoice == "Lizard") {
+        return (userChoice == "Rock" || userChoice == "Scissors") ? 1 : -1;
+    } 
+    
+    if (computerChoice == "Spock") {
+        return (userChoice == "Lizard" || userChoice == "Paper") ? 1 : -1;
+    }
 }
 
 function recordResult() {
