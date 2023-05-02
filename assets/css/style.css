@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: #fff;
     font-family: "Roboto", sans-serif;
     color: #0e1416;
     text-align: center;
@@ -40,15 +40,15 @@ body {
 }
 
 #wins {
-    color: green;
+    color: #3ca11f;
 }
 
 #losses {
-    color: red;
+    color: #e93323;
 }
 
 #message {
-    color: gray; 
+    color: #808080; 
 }
 
 /* buttons */
@@ -58,7 +58,7 @@ body {
     border-radius: 50%;
     border: 10px solid;
     font-size: 3.5rem;
-    background-color: white;
+    background-color: #fff;
     margin: 1.2%;
 }
 
@@ -69,7 +69,7 @@ body {
 
 .btn-rock:hover {
     background-color: #b6b5b5;
-    color: white;
+    color: #fff;
 }
 
 .btn-paper {
@@ -79,7 +79,7 @@ body {
 
 .btn-paper:hover {
     background-color: #efc3bd;
-    color: white;
+    color: #fff;
 }
 
 .btn-scissors {
@@ -89,7 +89,7 @@ body {
 
 .btn-scissors:hover {
     background-color: #f4eeb7;
-    color: white;
+    color: #fff;
 }
 
 .btn-lizard {
@@ -99,7 +99,7 @@ body {
 
 .btn-lizard:hover {
     background-color: #b7d4b5;
-    color: white;
+    color: #fff;
 }
 
 .btn-spock {
@@ -109,23 +109,26 @@ body {
 
 .btn-spock:hover {
     background-color: #bbd5e3;
-    color: white;
+    color: #fff;
 }
 
+/* buttons when game is loading */
 .disabled {
-    color: grey;
-    border-color: gray;
+    color: #808080;
+    border-color: #808080;
     background: #ddd;
     opacity: .6;
 }
 
 .disabled:hover {
-    color: grey;
-    border-color: gray;
+    color: #808080;
+    border-color: #808080;
     background: #ddd;
     opacity: .6;
 }
 
+/* media queries */
+/* for mobile screen devices from 800px wide and down */
 @media screen and (max-width: 450px) {
     .btn {
         width: 80px;
@@ -133,7 +136,15 @@ body {
         border-radius: 50%;
         border: 5px solid;
         font-size: 2.5rem;
-        background-color: white;
+        background-color: #fff;
         margin: 1.2%;
+    }
+    
+    .scores {
+        font-size: 0.8rem;
+    }
+
+    .score-board span {
+        font-size: 0.8rem;
     }
 }

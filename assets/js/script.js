@@ -1,5 +1,3 @@
-
-
 let user = document.getElementById('users-choice');
 let computer = document.getElementById('computers-choice');
 let result = document.getElementById('result');

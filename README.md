@@ -64,11 +64,11 @@ _Code Validation_
 
 _Test cases_
 1. User clicks on a button, buttons turn gray while waiting for computers choice. A text appear that says "Please wait for the computer to select. The players choice is displayed beneath the text. First time playing, the scores are all set to zero.
-<br><img src="docs/testcase_1.png" width="75%"><br>
+<br><img src="docs/testcase_graybuttons.png" width="75%"><br>
 
 2. User tries clicking on a button while they are disabled, nothing happenes. 
 3. After the game is loaded, the results are presented. 
-<br><img src="docs/testcase_2.png" width="75%">
+<br><img src="docs/testcase_gameloaded.png" width="75%">
 
 4. User clicks on a button again, computers choice as well as the results are cleared and step (1-3) is repeated. 
 
