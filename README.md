@@ -54,6 +54,7 @@ Font chosen is roboto.<br><br>
 
 ------
 **Testing**
+
 _Code Validation_
 - I have tested the HTML through W3C Validator, and the website passed without warnings or errors. <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Femmavkarlsson.github.io%2Fportfolio-project2%2F">Results</a>
 - I have tested the CSS through the Jigsaw validator, and it passed without warnings or errors. <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Femmavkarlsson.github.io%2Fportfolio-project2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv">Results</a>

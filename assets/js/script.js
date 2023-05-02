@@ -4,7 +4,7 @@ let buttons = document.getElementsByClassName('btn-selection');
 
 function initializeGame(event) {
     for (let button of buttons) {
-        const userChoice = button.name;
+        let userChoice = button.name;
         
         button.addEventListener('click', function(event) {
             makeUserSelection(userChoice);
@@ -71,9 +71,9 @@ function makeUserSelection(userChoice) {
  * the descriptive text
  */
 function runGame(userChoice) {
-    const computerChoice = computerTurn();    
-    const winner = checkWinner(userChoice, computerChoice);
-    const outcome = recordResult(winner);
+    let computerChoice = computerTurn();    
+    let winner = checkWinner(userChoice, computerChoice);
+    let outcome = recordResult(winner);
 
     messageSpan.textContent = "";
     computer.textContent = computerChoice;
@@ -108,6 +108,9 @@ function computerTurn() {
 
 /**
  * Checks the winner of the game
+ * 0 = tie
+ * 1 = user wins
+ * -1 = computer wins
  */
 function checkWinner(userChoice, computerChoice) {
     if(userChoice == computerChoice){
