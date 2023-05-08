@@ -12,6 +12,7 @@ let buttons = document.getElementsByClassName('btn-selection');
 let userScore = 0;
 let computerScore = 0;
 let tieGames = 0;
+let gameInProgress = false;
 
 /**
  * Make user selection based on the button it clicks
@@ -46,6 +47,11 @@ function toggleButtons(isEnabled) {
  * takes in the userChoice parameter
  */
 function makeUserSelection(userChoice) {
+    if (gameInProgress == true) {
+        return;
+    }
+
+    gameInProgress = true;
     toggleButtons(false);
 
     messageSpan.textContent = "Please wait for computer to select";
@@ -55,6 +61,7 @@ function makeUserSelection(userChoice) {
 
     setTimeout(function() {
         runGame(userChoice);
+        gameInProgress = false;
         toggleButtons(true);
     }, 1500);    
 }
